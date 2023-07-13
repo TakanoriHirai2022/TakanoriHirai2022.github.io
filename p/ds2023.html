@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>藤女子大学データサイエンス</title>
+		
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="藤女子大学">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black2.css" id="theme">
+		
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<!-- Noto Serif Japanese -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+		<style>
+			s1 {font-family: 'Noto Serif JP', serif;}
+			wf-hannari { font-family: "Hannari"; }
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="https://www.fujijoshi.ac.jp/uploads/banner/default/IMG_19511.JPG">
+					<section>
+						<p><font color="#36030d"><wf-hannari>お手元のデバイスで見ることもできます</wf-hannari></font></p>
+						<img class="qrcode_202307131452.png" src="bild/qrcode_202307131452.png"  alt="URL" height="500" >
+						
+					</section>
+					<section id="transitions">
+						<h2>Transition Styles<br><font color="#36030d">（スライド方法の変更）</font></h2>
+						<p>
+							You can select from different transitions, like: <br>
+							<a href="?transition=none#/transitions">None</a> -
+							<a href="?transition=fade#/transitions">Fade</a> -
+							<a href="?transition=slide#/transitions">Slide</a> -
+							<a href="?transition=convex#/transitions">Convex</a> -
+							<a href="?transition=concave#/transitions">Concave</a> -
+							<a href="?transition=zoom#/transitions">Zoom</a>
+						</p>
+					</section>
+				</section>
+				<section style="text-align: left;">
+					<section data-background="https://www.fujijoshi.ac.jp/uploads/banner/default/mv_02.jpg">
+						<h3><s1>藤女子大学のデータサイエンス</s1></h3>
+						<p>2023年7月23日</p>
+						<hr>
+						<!--
+						<p>651教室</p>
+						<p>10:00から10:30</p>
+						<p>or</p>
+						<p>14:00から14:30</p>
+						
+						藤女子大学でも主なコンピュータ言語はPythonです。高校と同じです。ですが、アノテーションなどの基本をまずは復習していきます。通信規格のプロトコルなどネットワークの基本を含む、コンピュータの利用について最初の授業では扱います。その上でPythonの練習をしていきます。
+						猫のテキストマイニング　主人　が一番多い
+						Pythonの条件分岐を見てみましょう
+						ヘルシンキの首都は
+						教材や顧客アンケート、ゲームなど、作成してみましょう。
+						日本語学校の立地条件を考える卒論の作成です。札幌に点在する学校を座標軸に落とし込んでいきます。さらに、他の条件も数字に置き換え、合わせてプロットするなど研究を進めます。駅の近くばかり、北区にばかり存在、・・・どのような結果になるのでしょうか。
+						母子関係についての調査結果を数字に置き換え、csvデータに整理しています。Pythonで実行処理していくと、どのような結果が見えてくるでしょうか。
+						
+						-->
+						<iframe src="https://takanorihirai2022.github.io/clock/" height=500 width=600></iframe>
+						
+					</section>
+					<section class="present" style="top: 133px; display: block;">
+						<table>
+							<thead>
+							<tr>
+								
+								<th>平 井 孝 典</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								
+								<td><small>専攻</small><br>図書館情報学・情報社会学（アーカイブズ学）</td>
+							</tr>
+							
+							<tr>
+								
+								<td><small>担当</small><br>「情報リテラシーA」「情報リテラシーB」<br>文化総合学科「歴史資料論C」など</td>
+							</tr>
+							
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section class="present" style="top: 133px; display: block;" data-background="https://www.fujijoshi.ac.jp/uploads/banner/default/mv_02.jpg">
+						<font color="#36030d">
+						<table>
+							<thead>
+							<tr>
+								<th></th>
+								<th>目　次</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>1</td>
+								<td>データサイエンスとは</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>スクリプト言語はPythonなど</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>アノテーションの理解</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>条件分岐</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>テキストマイニング</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>演習・ゼミでの活用へ</td>
+							</tr>
+							</tbody>
+						</table>
+						</font>
+					</section>
+					<section style="text-align: left;">
+						<p>Google ChromeあるいはChromiumでPDF出力する</p>
+						<hr>
+						<ul>
+							<li>URLの最後に<font color="#edd5d5">?print-pdf</font>を付与</li>
+							<li>CTRL/CMD+P</li>
+							<li>送信先「PDFに保存」を選択</li>
+							<li>「1枚あたりのページ数」など調整</li>
+						</ul> 
+					</section>
+				</section>
+				<section>
+				<section style="text-align: left;" data-background="https://www.fujijoshi.ac.jp/assets/library/img/top/mv.jpg">
+					
+					
+						<h3><font color="#36030d">1.データサイエンスとは</font></h3>
+					<hr>
+						<p><font color="#36030d">シャーロック・ホームズをご存知でしょうか。コナン・ドイルの作品に出てくる登場人物です。『踊る人形』(Dancing Men)で暗号を解く際に、文字の使用頻度をあてはめ、ストーカーの暗号を読んでいきます。「換字暗号」といいますね。文字の利用を統計的に把握しておくことで目の前の情報を明確にしています。(<a href="https://www.maruzen-publishing.co.jp/item/?book_no=304348" target="_blank" >松原望・森本栄一『わかりやすい統計学　データサイエンス基礎』の29ページ</a>)</font></P>
+					</section>
+					<section style="text-align: left;">
+						<h3>1.データサイエンスとは</h3>
+					<hr>
+					<p>みなさんの中には教職志望の方もいるでしょう。生徒の成績5科目を把握し生徒指導をします。①点数の合計を見ている将来のみなさんと、②ある生徒たちは国語と英語が得意だが他の科目は不十分、ある生徒たちは数学のみがいつもよくできる、と分析している別の将来のみなさん、どちらがより指導をしやすい状況でしょうか。②はクラスター分析などといい、すでに顧客の状況を調査するマーケティングなどで使われています。SNS運営会社も分析結果に合わせ広告を変えます。
+					</p>
+					
+				</section>
+					<section style="text-align: left;">
+						<h3>1.データサイエンスとは</h3>
+						<hr>
+						<p>藤女子大学では、高校までのデータサイエンスの復習とその初歩的な応用習得を目指し授業が行われます。希望者は、演習やゼミで実践的に学びます。</p>
+						
+					</section>
+					
+				</section>
+				
+				<section style="text-align: left;" data-transition="slide" data-background="#05301a" data-background-transition="zoom">
+					
+					
+						<h3>2.スクリプト言語はPythonなど</h3>
+						<hr>
+						<ul>
+							<li><span class="fragment">藤女子大学でも主なコンピュータ言語はPythonです。高校と同じです。</span></li>
+							<li><span class="fragment">ですが、アノテーションなどの基本をまずは復習していきます。</span></li>
+							<li><span class="fragment">通信規格のプロトコルなどネットワークの基本を含む、コンピュータの利用について最初の授業では扱います。</span></li>
+							<li><span class="fragment">その上でPythonの復習練習をしていきます。</span></li>
+						</ul>
+						
+					</section>
+				<section style="text-align: left;" data-transition="slide" data-background="#1c0869" data-background-transition="zoom">
+					<section>
+					<h3>3.アノテーションの理解</h3>
+						<hr>
+						<ul>
+						<li><span class="fragment">アノテーション、他大学のオープンキャンパスでも聞きます。(情報に対する)注釈のことです。</span></li>
+						<li><span class="fragment">コンピュータに情報を理解させ処理させるには情報に対し意味づけが必要になります。</span></li>
+						<li><span class="fragment">アノテーションは、最近は機械学習で限定的に用いられたり、逆に幅広い意味で用いられることもあります。</span></li>
+						<li><span class="fragment">この理解をある程度はした上でPythonの復習練習をしていきます。</span></li>
+						</ul>
+						
+					</section>
+					
+				<section>
+					<ul>
+						<li><a href="https://ai-kenkyujo.com/artificial-intelligence/annotation/" target="_blank" >AI研究所の松田「アノテーションとは？6種類の解説とアノテーションのやり方を紹介」</a></li>
+						<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/2303/20/news023.html" target="_blank" >5分で分かるデータサイエンス</a></li>
+						
+						
+					</ul>
+				</section>
+				</section>
+				
+				<section>
+					<section  style="text-align: left;" data-background="https://www.fujijoshi.ac.jp/uploads/banner/default/mv_02.jpg">
+					
+						<h4><s1>APIを活用し<br>情報アクセスのツールを作成してみましょう<br>(国立国会図書館のオープンソースを活用)<br>JavaScriptです</s1></h4>
+						<hr>
+						<iframe src="https://takanorihirai2022.github.io/a/j/index.html" width=800></iframe>
+					</section>
+						<section>
+							<ul>
+								<li><a href="https://blog.hubspot.jp/website/api-web" target="_blank" >Web APIとは？初心者にもわかる基本的な仕組みと活用方法： 水落 絵理香（みずおち えりか）</a></li>
+								<li><a href="https://jpsearch.go.jp/" target="_blank" >デジタルアーカイブジャパン推進委員会「日本のデジタルアーカイブを探そう」</a></li>
+								<li><a href="https://www.kantei.go.jp/jp/singi/titeki2/digitalarchive_suisiniinkai/pdf/apansearch_Pamphlet.pdf" target="_blank" >首相官邸「ジャパンサーチとは？ 誰が運営しているの？ 何ができるの？」</a></li>
+								
+							</ul>
+					</section>
+					</section>
+				<section style="text-align: left;" data-transition="slide" data-background="#300510" data-background-transition="zoom">
+					<section>
+						<h3>4.条件分岐</h3>
+						<hr>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">条件分岐の例</h2>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+print("フィンランドの首都の名前は？")
+ans = input()
+if ans == "ヘルシンキ":
+	print("正解です")
+else:
+	print("不正解です")
+					</code></pre>
+						<p>Pythonで条件を設定し異なるプログラムを実行。if文を用います。</p>
+					</section>
+					<section>
+						<ul>
+							<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/1905/07/news019_2.html" target="_blank" >［Python入門］if文による条件分岐</a></li>
+							<li><a href="https://amorphous.tf.chiba-u.jp/lecture.files/chem_computer/04_if%2C%20elif%2C%20else%E3%81%AB%E3%82%88%E3%82%8B%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90/04.html" target="_blank" >if, elif, elseによる条件分岐 千葉大学</a></li>
+						
+							
+						</ul>
+					</section>
+					
+					
+				</section>
+				
+				<section style="text-align: left;" data-transition="slide" data-background="#03613a" data-background-transition="zoom">
+					<section>
+						<h3>5.テキストマイニング</h3>
+						<hr>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">頻出語句を抽出</h2>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+# coding: UTF-8
+import MeCab
+print('ipadic')
+## 以下は筆者の環境で辞書を指定する方法です
+tagger = MeCab.Tagger('-d /usr/local/lib/mecab/dic/ipadic/')
+x = '吾輩《わがはい》は猫である。名前はまだ無い。どこで生れたかとんと見当《けんとう》がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。'
+x_wakati = tagger.parse(x)
+print(x_wakati)
+##
+print('NEologd')
+tagger = MeCab.Tagger('-d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/')
+x = '吾輩《わがはい》は猫である。名前はまだ無い。どこで生れたかとんと見当《けんとう》がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。'
+x_wakati = tagger.parse(x)
+print(x_wakati)
+					</code></pre>
+						<p>夏目漱石『吾輩は猫である』が<u>猫目線</u>で描かれていることがわかります。「主人」が最頻出名詞です。</p>
+					</section>
+				<section>
+						<ul>
+							<li><a href="https://fopac.fujijoshi.ac.jp/webopac/BB01142406" target="_blank" >Python[完全]入門 / 松浦健一郎, 司ゆき著</a></li>
+							<li><a href="http://hdl.handle.net/2433/265459" target="_blank" >京都大学の全学共通科目として実施されるプログラミング演習(Python)の教科書</a></li>
+							<li><a href="https://www.c-r.com/book/detail/1464" target="_blank" >Pythonで学ぶ テキストマイニング入門●石田 基広(いしだ・もとひろ)</a></li>
+						</ul>
+					
+					
+				</section>
+				</section>
+				
+				<section style="text-align: left;" data-transition="slide" data-background="#270c38" data-background-transition="zoom">
+					<section>
+						<h3>6.演習・ゼミでの活用へ</h3>
+						<hr>
+					</section>
+					<section>
+						日本語学校の立地条件を考える卒論の作成です。札幌に点在する学校を地図上に落とし込んでいきます。さらに、他の条件も合わせてプロットするなど研究を進めます。駅の近くばかり、北区にばかり存在、・・・どのような結果になるのでしょうか。<br><a href="https://zenn.dev/robes/articles/755e7ee27ce308" target="_blank" >【Python】地図上に位置情報（緯度・経度）をプロットする方法</a><br>実は最近、考古学などで成果を見る機会が増えました。随分前から測量実務や船舶の位置情報では用いられている手法です。
+					</section>
+					<section>
+						母子関係についての調査結果を数字に置き換え、csvデータに整理しています。Pythonで実行処理していくと、どのような結果が見えてくるでしょうか。アンケートを日本語など自然語で処理分析することもします。自由記述などの分析です。一般的には、あらかじめ数字に置き換えられるようにし、数的に処理します。
+					</section>
+				</section>
+				
+				
+				<section style="text-align: left;">
+					<section>
+						<h3>大学の詳しい情報はこちらへ</h3>
+						<hr>
+						<ul>
+							<li>
+							<a href="https://www.fujijoshi.ac.jp/" target="_blank" >藤女子大学ホームページへ</a>
+							</li>
+							<li>
+							<a href="https://www.fujijoshi.ac.jp/dept/program/clis/" target="_blank" >図書館情報学課程へ</a>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>html/JavaScriptのソースはこちらから</h4>
+						
+						<hr>
+						<ul>
+							<li>
+							<a href="https://revealjs.com/" target="_blank" >Created by Hakim El Hattab and contributors</a>
+							</li>
+							<li>
+							<a href="https://github.com/hakimel/reveal.js/" target="_blank" >hakimel/reveal.js</a>
+							</li>
+						</ul>
+						<hr>
+						<p>ありがとうございます</p>
+					</section>
+				</section>
+				<section>
+					<h3><s1>藤女子大学のデータサイエンス</s1></h3>
+					<hr>
+					<p><s1>ありがとうございました</s1></p>
+				</section>
+				
+			</div>
+			
+		</div>
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+			
+		</script>
+		
+	</body>
+</html>
