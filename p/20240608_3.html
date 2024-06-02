@@ -36,7 +36,7 @@
 			.balloon2{
 				position: relative;
 				padding: 20px;
-				background-color: #ffadad;
+				background-color: #ff4d4d;
 				border: 2px solid #ca8888;
 				border-radius: 10px;         /* 角丸を指定 */
 			}
@@ -92,6 +92,75 @@
 				margin: 0;
 				padding: 0;
 			}
+			/* 上向き　https://saruwakakun.com/html-css/reference/speech-bubble */
+			.balloon3-top {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 0;
+				padding: 0 5px;
+				width: 90px;
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				color: #FFF;
+				font-size: 20px;
+				font-weight: bold;
+				background: #415e34;
+				border-radius: 50%;
+				box-sizing: border-box;
+			}
+			
+			.balloon3-top:before {
+				content: "";
+				position: absolute;
+				top: -25px;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-bottom: 15px solid #415e34;
+				z-index: 0;
+			}
+			
+			.balloon2-right {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 15px 1.5em 0;
+				padding: 7px 10px;
+				min-width: 120px;
+				max-width: 100%;
+				color: #555;
+				font-size: 16px;
+				background: #a18db4;
+				border: solid 3px #a18db4;
+				box-sizing: border-box;
+			}
+			
+			.balloon2-right:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -24px;
+				margin-top: -12px;
+				border: 12px solid transparent;
+				border-left: 12px solid #a18db4;
+				z-index: 2;
+			}
+			
+			.balloon2-right:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -30px;
+				margin-top: -14px;
+				border: 14px solid transparent;
+				border-left: 14px solid #a18db4;
+				z-index: 1;
+			}
+			
+			.balloon2-right p {
+				margin: 0;
+				padding: 0;
+			}
 		</style>
 		
 		
@@ -103,86 +172,13 @@
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<!--
-				<section data-background="https://www.fujijoshi.ac.jp/uploads/images/main/v2/contents/6207/47130/thumb_2_kikuchi_misato6.jpeg">
-					<section>
-						<h3><font color="#e1e8e3">オープンキャンパス<br>お手元のデバイスで見られます</font></h3>
-						<img class="qrcode_202401111531.png" src="bild/qrcode_202401111531.png"  alt="URL" height="300" >
-						
-					</section>
-					<section id="transitions">
-						<h2>Transition Styles<br><font color="#36030d">（スライド方法の変更）</font></h2>
-						<p>
-							You can select from different transitions, like: <br>
-							<a href="?transition=none#/transitions">None</a> -
-							<a href="?transition=fade#/transitions">Fade</a> -
-							<a href="?transition=slide#/transitions">Slide</a> -
-							<a href="?transition=convex#/transitions">Convex</a> -
-							<a href="?transition=concave#/transitions">Concave</a> -
-							<a href="?transition=zoom#/transitions">Zoom</a>
-						</p>
-					</section>
-				</section>
-				<section style="text-align: left;">
-					<section data-background="https://www.fujijoshi.ac.jp/uploads/banner/default/mv_02.jpg">
-						<h3><s1>オープンキャンパス <br>藤女子大学図書館情報学課程</s1></h3>
-						<p>2024年<small>(escで全体表示。sボタンで別ウィンドウ次ページ表示。)</small></p>
-						<hr>
-						<!-- <p>651教室</p>
-						<p>10:00から10:30<br>or<br>14:00から14:30</p>-->
-				<!--
-						<iframe src="https://takanorihirai2022.github.io/clock/" width=200></iframe>
-						
-					</section>
-					<section class="present" style="top: 133px; display: block;">
-						<table>
-							<thead>
-							<tr>
-								
-								<th>平 井 孝 典</th>
-							</tr>
-							</thead>
-							<tbody>
-							<tr>
-								
-								<td><small>専攻</small><br>図書館情報学・情報社会学（アーカイブズ学）</td>
-							</tr>
-							
-							<tr>
-								
-								<td><small>担当</small><br>図書館情報学課程科目「図書館情報技術論」など</td>
-							</tr>
-							
-							</tbody>
-						</table>
-					</section>
-				</section>
+				
 				<section>
-					<section class="present" style="top: 133px; display: block;" data-background="https://www.fujijoshi.ac.jp/uploads/banner/default/mv_02.jpg">
-						<font color="#36030d">
-						<table>
-							<thead>
-							<tr>
-								<th></th>
-								<th>目　次</th>
-							</tr>
-							</thead>
-							<tbody>
-							<tr>
-								<td>1</td>
-								<td>図書館で働きますか</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>図書館情報学課程を受講するには</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>図書館とは・図書館員とは</td>
-							</tr>
-							</tbody>
-						</table>
-						</font>
+					<section style="text-align: left;">
+						<h2>司書の資格を取りたいのですが、授業は大変ですか？</h2>
+						<div class="balloon3-top">
+							質 問
+						</div>
 					</section>
 					<section style="text-align: left;">
 						<p>Google ChromeあるいはChromiumでPDF出力する</p>
@@ -192,45 +188,29 @@
 							<li>CTRL/CMD+P</li>
 							<li>送信先「PDFに保存」を選択</li>
 							<li>「1枚あたりのページ数」など調整</li>
+							<li>escで全体表示。sボタンで別ウィンドウ次ページ表示</li>
 						</ul> 
 					</section>
 				</section>
-				<section style="text-align: left;" data-background="https://www.fujijoshi.ac.jp/assets/library/img/top/mv.jpg">
-					
-					
-					<h3><font color="#36030d">1.図書館で働きますか</font></h3>
-					<hr>
-					<p>
-						<font color="#0e0e59">図書館のような情報を扱う施設での仕事、興味がありますか。札幌市中央図書館などの公共図書館員になるには、司書資格を取得し採用試験に通過する必要があります。</font>
-					</P>
-					<hr>
-					<p><font color="#36030d">藤女子大学の場合、学科の勉強をしっかりこなし、さらに司書資格の単位を修得します。司書としてスタートできるよう準備します。</font>
-					</p>
-					
-				</section>
-		-->
-				<section>
 				<section style="text-align: left;">
-					<h2>司書の資格を取りたいのですが、授業は大変ですか？</h2>
-				</section>
-				<section style="text-align: left;">
-					<p>Google ChromeあるいはChromiumでPDF出力する</p>
-					<hr>
-					<ul>
-						<li>URLの最後に<font color="#edd5d5">?print-pdf</font>を付与</li>
-						<li>CTRL/CMD+P</li>
-						<li>送信先「PDFに保存」を選択</li>
-						<li>「1枚あたりのページ数」など調整</li>
-						<li>escで全体表示。sボタンで別ウィンドウ次ページ表示</li>
-					</ul> 
-				</section>
-			</section>
-				<section style="text-align: left;">
+					<span class="fragment">
 					<div class="balloon2">
 						<h2>受講者それぞれの目的意識の違いから、大変と感じる人もいますし、感じない人もいます。</h2>
 					</div>
-					
+					</span>
 				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #95fcb1, #096322)" style="text-align: left;">
+					<span class="fragment">
+					<div class="balloon2-right">
+						<h2><s1>平日に学科科目と教職科目を受講し、土曜日に図書館情報学課程科目に参加する、このような在学生もいます。ここでは、「1.図書館情報学課程を受講するには」、と題して藤女子大学での受講方法などを簡略にご説明します。次に、「2.図書館員になるには」と将来の選択肢をご紹介します。</s1></h2>
+					</div>
+					</span>
+					<span class="fragment">
+						<div class="balloon2-right">
+							<h2><s1>①大学で学ぶこと、これを最初に考えてみましょう。今は漠然としたもの、中世に関心がある、などでもOKです。ある専門を深く勉強すること、これは司書となる人にも大切なことです。②本学では2年次に図書館情報学課程科目受講がスタートします。1年次に相談することもできます。</s1></h2>
+						</div>
+					</span>
+			</section>
 				<section style="text-align: left;" data-transition="slide" data-background="#05301a" data-background-transition="zoom">
 					<section>
 						<h3>1.図書館情報学課程を受講するには</h3>
@@ -265,7 +245,7 @@
 				</section>
 				
 				
-					
+				
 				
 				
 				<section style="text-align: left;" data-transition="slide" data-background="#300510" data-background-transition="zoom">
@@ -280,7 +260,7 @@
 						<ul>
 							<li>公共図書館の場合は司書資格が必要(<a href="https://www.mext.go.jp/a_menu/shougai/gakugei/shisyo/index.htm" target="_blank" >司書になるためには</a>)</li>
 							<li><a href="https://www.ndl.go.jp/jp/employ/index.html" target="_blank" >国立国会図書館</a>と大学図書館に資格制度はない</li>
-							<li>司書資格とは異なる司書教諭資格は教職の免許も必要</li>
+							<li>司書資格とは異なる司書教諭資格は教職の免許取得も必要</li>
 							<li><a href="https://www.mext.go.jp/a_menu/shotou/dokusho/sisyo/1360933.htm" target="_blank" >学校司書</a>は資格ではなく本学など各大学でのスキル認定(モデルカリキュラムは文科省作成)</li>
 							<li>図書館情報学課程の修了者には大学図書館や公共図書館に就職する人も</li>
 							<li>課程で学んだことなどを面接二次試験で確認</li>
@@ -303,7 +283,7 @@
 				</section>
 				
 				<section style="text-align: left;">
-					<section>
+					
 						<h3>その他の情報</h3>
 						<hr>
 						<ul>
@@ -318,31 +298,33 @@
 							</li>
 						</ul>
 					</section>
-					<section>
-						<h4>html/JavaScriptのソースはこちらから</h4>
-						
-						<hr>
-						<ul>
-							<li>
-							<a href="https://revealjs.com/" target="_blank" >Created by Hakim El Hattab and contributors</a>
-							</li>
-							<li>
-							<a href="https://github.com/hakimel/reveal.js/" target="_blank" >hakimel/reveal.js</a>
-							</li>
-						</ul>
-						<hr>
-						<p>ありがとうございます</p>
-					</section>
-				</section>
+					
+				
+				<section style="text-align: left;">
 				<section>
 					<div class="balloon1">
-						<h4>情報アクセスのツールを作成してみましょう<br>(国立国会図書館のオープンソースを活用)</h4>
+						<h4><s1>情報アクセスのツールを作成してみましょう<br>(国立国会図書館職員がプログラミングしています)</s1></h4>
 						
 						
 						<hr>
 					<iframe src="https://takanorihirai2022.github.io/a/j/index.html" height=300 width=800></iframe></div>
 				</section>
-				
+				<section>
+					<p>html/JavaScriptのソースはこちらから</p>
+					
+					<hr>
+					<ul>
+						<li>
+						<a href="https://revealjs.com/" target="_blank" >Created by Hakim El Hattab and contributors</a>
+						</li>
+						<li>
+						<a href="https://github.com/hakimel/reveal.js/" target="_blank" >hakimel/reveal.js</a>
+						</li>
+					</ul>
+					<hr>
+					
+				</section>
+			</section>
 			</div>
 			
 		</div>
