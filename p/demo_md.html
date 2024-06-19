@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>マークダウンサンプルreveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="robots" content="noindex">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.balloon1-top {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 0;
+				padding: 7px 10px;
+				min-width: 120px;
+				max-width: 100%;
+				color: #555;
+				font-size: 16px;
+				background: #e0edff;
+			}
+			
+			.balloon1-top:before {
+				content: "";
+				position: absolute;
+				top: -30px;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-bottom: 15px solid #e0edff;
+			}
+			
+			.balloon1-top p {
+				margin: 0;
+				padding: 0;
+			}
+			.balloon3 {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 0;
+				padding: 0 5px;
+				width: 90px;
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				color: #FFF;
+				font-size: 20px;
+				font-weight: bold;
+				background: #70a6ff;
+				border-radius: 50%;
+				box-sizing: border-box;
+			}
+			
+			.balloon3:before {
+				content: "";
+				position: absolute;
+				bottom: -25px;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-top: 15px solid #70a6ff;
+				z-index: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+	## 藤女子大学へようこそ
+### おすすめの食事処など大学周辺の情報
+
+					<div class="balloon1-top"><p>escで全体表示。sボタンで別ウィンドウ次ページ表示</p></div>
+
+<img class="qrcode_202405291711.png" src="bild/qrcode_202406191406.png"  alt="URL" height="300" ><br>
+
+				  </textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.1493024382553!2d141.34725457614672!3d43.08035637113513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b291a8854cc9f%3A0xd0aa2f48cf1d551b!2z6Jek5aWz5a2Q5aSn5a2m!5e0!3m2!1sja!2sjp!4v1718761181376!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </textarea>
+				</section>
+				<section>
+				<section data-markdown>
+					<textarea data-template>
+	## 和食
+	---
+	## おすすめ 1
+- 準備中1
+- 準備中2
+- 準備中3
+- 準備中4
+	</textarea>
+				</section>
+
+					<section data-markdown>
+						<textarea data-template>
+	## 洋食
+	---
+	## おすすめ 2
+- 準備中5
+- 準備中6
+- 準備中7
+- 準備中8
+	</textarea>
+					</section>
+				</section>
+				
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+	## コンビニ
+	---
+	## おすすめ 3
+- 準備中9
+- 準備中10
+- 準備中11
+- 準備中12
+	</textarea>
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+	## 藤女子大学生がよく利用
+	---
+	## おすすめ 4
+- 準備中13
+- 準備中14
+- 準備中15
+- 準備中16
+	</textarea>
+					</section>
+				</section>
+				
+				
+				<!-- htmlを混入できる -->
+				<section>
+				<section data-markdown>
+					<textarea data-template>
+	## 図書館情報学課程学生から
+	---
+	## おすすめ 本
+
+<div class="balloon3" style="text-align: center;" >ポイント</div><br>
+
+- 長　編
+- 利用者との会話に出てくるかも
+- 達成感
+- <span class="fragment">とりあえずなんでも</span>
+
+	---
+	
+1. <span class="fragment"><a href="https://www.kotensinyaku.jp/books/book316/" target="_blank" >トルストイ　著　戦争と平和</a></span>
+2. <span class="fragment"><a href="https://www.ehonnavi.net/ehon00.asp?no=10745" target="_blank" >リンドグレーン　小さいきょうだい</a></span>
+3. <span class="fragment"><a href="https://www.let.hokudai.ac.jp/book/24365" target="_blank" >山本 文彦　著　　神聖ローマ帝国</a></span>
+4. <span class="fragment">猪熊　葉子 著　<a href="https://www.iwanami.co.jp/book/b243785.html" target="_blank" >大人に贈る子どもの文学　人生を新たな目で見直すために</a></span>
+</textarea>
+				</section>
+				</section>
+				
+				<!-- シンプルに作成　これでスライドしていきます　--- がページ区切りです
+				
+				<section data-markdown>
+					<textarea data-template>
+	## Slide 1
+	A paragraph with some text and a [link](https://hakim.se).
+	---
+	## Slide 2
+	---
+	## Slide 3
+  </textarea>
+				</section>
+				
+				-->
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
