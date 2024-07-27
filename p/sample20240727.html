@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>マークダウンサンプルreveal.js – The HTML Presentation Framework</title>
+		
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="robots" content="noindex">
+		
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				
+				
+				<section data-markdown style="text-align: left;">
+					<textarea data-template>
+## [藤女子大学](https://www.fujijoshi.ac.jp/)
+キリスト教的世界観や人間観を土台として、女性の全人的高等教育を通して、広く人類社会に対する愛と奉仕に生きる高い知性と豊かな人間性を備えた女性の育成を使命とする。
+---
+## [文学部](https://www.fujijoshi.ac.jp/guide/rinen/faculty/)
+文学部は、人文・社会に関する諸分野の教育を通じて、広く、深い知識と鋭敏な感性とを自らのものとし、地域社会のみならずより広範な社会環境において多角的な視野のもとで多様な課題に主体的に取り組み、社会に貢献できる女性を育てることを目的とする。
+---
+## [人間生活学部](https://www.fujijoshi.ac.jp/guide/rinen/faculty/)
+人間生活学部は、生命及び人間の尊厳と個人の多様な生き方を尊重し、他者と共存しつつ自立した生活を送り、人間と社会及び自然の相互関係に対する洞察に基づいて、多様化・複雑化してゆく生活の諸課題に責任を持って対処し、国際関係を超えた地球的視野から生活の諸問題を実践的に対処することのできる女性を育てる。
+</textarea>
+				</section>
+				
+			</div>
+			
+		</div>
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+			
+		</script>
+		
+	</body>
+</html>
