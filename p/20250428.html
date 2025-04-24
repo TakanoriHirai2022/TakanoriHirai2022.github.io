@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>「EU 一般データ保護規則」で求められるデータの構造化とフィンランド国立公文書館</title>
+		
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="robots" content="noindex">
+		
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<style>
+			s1 {font-family: 'Noto Serif JP', serif;}
+			wf-hannari { font-family: "Hannari"; }
+			/* 吹き出し本体 - 枠線付きの吹き出し */
+			.balloon2{
+				position: relative;
+				padding: 20px;
+				background-color: #ff4d4d;
+				border: 2px solid #ca8888;
+				border-radius: 10px;         /* 角丸を指定 */
+			}
+			/* 三角アイコン - 枠線付きの吹き出し */
+			.balloon2::before{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 0;
+				left: -15px;
+				top: 20px;
+				border-right: 15px solid #ca8888;
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+			}
+			.balloon2::after{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 0;
+				left: -12px;
+				top: 20px;
+				border-right: 15px solid #ffadad;
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+			}
+			.balloon1 {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 0;
+				padding: 7px 10px;
+				min-width: 120px;
+				max-width: 100%;
+				color: #555;
+				font-size: 16px;
+				background: #e0edff;
+				border-radius: 15px;
+			}
+			
+			.balloon1:before {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-top: 15px solid #e0edff;
+			}
+			
+			.balloon1 p {
+				margin: 0;
+				padding: 0;
+			}
+			/* 上向き　https://saruwakakun.com/html-css/reference/speech-bubble */
+			.balloon3-top {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 0;
+				padding: 0 5px;
+				width: 90px;
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				color: #FFF;
+				font-size: 20px;
+				font-weight: bold;
+				background: #415e34;
+				border-radius: 50%;
+				box-sizing: border-box;
+			}
+			
+			.balloon3-top:before {
+				content: "";
+				position: absolute;
+				top: -25px;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-bottom: 15px solid #415e34;
+				z-index: 0;
+			}
+			
+			.balloon2-right {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 15px 1.5em 0;
+				padding: 7px 10px;
+				min-width: 120px;
+				max-width: 100%;
+				color: #555;
+				font-size: 16px;
+				background: #a18db4;
+				border: solid 3px #a18db4;
+				box-sizing: border-box;
+			}
+			
+			.balloon2-right:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -24px;
+				margin-top: -12px;
+				border: 12px solid transparent;
+				border-left: 12px solid #a18db4;
+				z-index: 2;
+			}
+			
+			.balloon2-right:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -30px;
+				margin-top: -14px;
+				border: 14px solid transparent;
+				border-left: 14px solid #a18db4;
+				z-index: 1;
+			}
+			
+			.balloon2-right p {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+				<section style="text-align: left;">
+						<h3>「EU 一般データ保護規則」<br>で求められるデータの構造化と<br>フィンランド国立公文書館</h3>
+						<div class="balloon3-top">
+							<a href="https://researchmap.jp/20396336"target="_blank">平井孝典</a>
+						</div>
+				</section>
+					<section style="text-align: left;">
+						<p>Google ChromeあるいはChromiumでPDF出力する</p>
+						<hr>
+						<ul>
+							<li>URLの最後に<font color="#edd5d5">?print-pdf</font>を付与</li>
+							<li>CTRL/CMD+P</li>
+							<li>送信先「PDFに保存」を選択</li>
+							<li>「1枚あたりのページ数」など調整</li>
+							<li>escで全体表示。sボタンで別ウィンドウ次ページ表示</li>
+						</ul> 
+					</section>
+				</section>
+				<section>
+				<section style="text-align: left;">
+						<p><font color="#ffffff"><a href="https://doi.org/10.20704/rmsj.82.0_61"target="_blank">新原俊樹(2022)論文</a>が示すもの</font></p>
+					<hr>
+					<ul>
+							<li><span class="fragment">構造化されていない、言い換えれば機会可読のできないデータを、pandasなどを用いて前処理して、cos類似度で行政文書の特徴を明らかにしようとするもの</span></li>
+							<li><span class="fragment">日本でのデータの現状に合わせた解決方法を提示している</span></li>
+							<li><span class="fragment">過渡期的段階での対応策　日本の現状に合わせた対応策</span></li>
+					</ul>
+				</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff"><a href="	https://doi.org/10.20704/rmsj.69.0_67"target="_blank">古賀崇(2015)論文</a>の示すもの</font></p>
+						<hr>
+						<ul>
+							<li><span class="fragment">合衆国では2010年代からすでに実務で一般化している</span></li>
+							<li><span class="fragment">公文書も機械可読を考え作成されている</span></li>
+						</ul>
+					</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">RDA 2018年目録規則</font></p>
+						<hr>
+						<ul>
+							<li><span class="fragment">図書館ではタグ付で階層構造、オントロジーを考えた目録作成が始まっている</span></li>
+							<li><span class="fragment">博物館やアーカイブズも横断検索を織り込みやすい</span></li>
+						</ul>
+					</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">根源的な問題にアーカイブズ実務を戻す</font></p>
+						<hr>
+						<ul>
+							<li><span class="fragment">1998年のW3C勧告以来、セマンティク・ウェブの構築はネットワーク空間の課題</span></li>
+							<li><span class="fragment">RDFで機械可読を階層的に可能とすることは技術的には可能である</span></li>
+							<li><span class="fragment">対応にフィンランドは積極的である　フィンランド国立公文書館は対応しようと動いている</span></li>
+						</ul>
+					</section>
+				</section>
+				
+				
+				<section data-markdown style="text-align: left;">
+					<textarea data-template>
+
+## 1. はじめに　 EUのGDPR施行
+欧州連合（EU）は、個人情報(データ)保護に関する基本的人権を保証するために「EU 一般データ保護規則（General Data Protection Regulation：GDPR）」(以下GDPR)を2016年5月24日に発効、2018年5月25日から運用開始した。EEA域内で取得された個人データを域外に移転することが原則禁止されるなど(GDPR 44条から49条)、ビジネスでの影響が大きい。2018年以降、EEA域内の個人データを扱う事業者は、域外の事業者も含め、全てGDPRの規制に従うことが求められる。GDPRは情報化社会におけるプライバシー権保護を目的とする。・・・
+---
+## 2. 本稿の目的と課題の範囲
+本稿の目的は、短く言えば、フィンランド国立公文書館が社会に存在するデータの構造化にどのように関与していくのか、その考え方を明確にしておくことである。私文書も含め、ライフサイクルに応じ早い段階から統一した形式でデータが扱われるよう社会のマネージャーになる。これが現在の国立公文書館であり、そのために基本メタデータを提供してデータセットの作成の指針を示している。利用がしやすいようにセマンティックの語彙を検討しフィンランドでのオントロジー作成を担う。
+---
+## 3.重要な用語の確認　データセットとセマンティック
+「ネットワーク上のリソースばかりでなく、人間、場所、事象もURIを通してウェブ上で識別され」、「URIという分散型の識別メカニズムを用いることで、誰もがセマンティック・ウェブに参加し、様々な情報を効率的に統合し、意味を明瞭に示すことが可能」となる。OWLの工夫により、フィンランド社会に存在する残すべき公的な文書の相互運用性を高めることが目標となる。
+---
+## 4 主な先行研究や論点　実務での12の課題
+- 4.1 合衆国でのデータの構造化
+- 4.2 GDPRの評価
+- 4.3 「仮名化」(スードニマイゼーション)
+- 4.4 消去権(忘れられる権利)
+- 4.5 実務での12の課題
+- 4.6 小結
+---
+## 5  GDPRへの実務対応
+フィンランドでの国立公文書館が主導するデータの構造化のベースは、フィンランドのこれまでの実務での蓄積に加え(中世以来の伝統的な三階層やISAD(G)などの考え方を利用)、RiC-CM 1.0、Dublin Core、ISO 23081-1である。国立公文書館のホームページで最新版ガイドライン「アーカイブされるべき資料群のデータセット群の基本メタデータ」の確認は可能である。
+---
+## 6フィンランドでの法改正による対応
+GDPR諸原則(GDPR 1条から11条)とも整合性を持たせるために、多数の関連法が見直し作業をしている段階である。アーカイブズに関連する法には、憲法、情報公開法、行政機関情報管理法、データ保護法、アーカイブズ法、国立公文書館法などがある。GDPRに関係の深い法の要点に触れておく。法令はデータベースFINLEXを参照している。GDPR施行の直接的な影響はデータ保護法の改正であり、具体的な実務の方向は新「アーカイブズ法」が主たる根拠となる。
+
+---
+## 7.  『国立公文書館戦略2025　将来の展望』
+「戦略2025」で示される国立公文書館像は「公的なデータのライフサイクルマネジメントやアーカイビングの最も重要な団体」であり、「デジタルアーカイブズサービスのパイオニア」であり、「学術研究の大規模なインフラ」であり、あるいは「長期的にその専門性を展開する有能な組織」である。
+---
+## 8. 結論　国立公文書館の役割
+GDPRがフィンランド社会でのデータの構造化に一定の影響を与えていることと、データの構造化において国立公文書館がイニシアティブをとることを説明してきた。国立公文書館は「記憶の貯蔵庫」であるのに加え、「記憶のマネジメント」をする。「データ」のメタデータやオントロジーを作成しリンクトデータの利用環境を整えること、これがフィンランド国立公文書館の当面の役割の一つである。
+
+
+
+</textarea>
+				</section>
+				
+			</div>
+			
+		</div>
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+			
+		</script>
+		
+	</body>
+</html>
