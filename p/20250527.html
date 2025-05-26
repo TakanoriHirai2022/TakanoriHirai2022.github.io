@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>二枚の簿冊カヴァーと19世紀フィンランドのアルキーヴ実務</title>
+		
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="robots" content="noindex">
+		
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<style>
+			s1 {font-family: 'Noto Serif JP', serif;}
+			wf-hannari { font-family: "Hannari"; }
+			/* 吹き出し本体 - 枠線付きの吹き出し */
+			.balloon2{
+				position: relative;
+				padding: 20px;
+				background-color: #ff4d4d;
+				border: 2px solid #ca8888;
+				border-radius: 10px;         /* 角丸を指定 */
+			}
+			/* 三角アイコン - 枠線付きの吹き出し */
+			.balloon2::before{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 0;
+				left: -15px;
+				top: 20px;
+				border-right: 15px solid #ca8888;
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+			}
+			.balloon2::after{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 0;
+				left: -12px;
+				top: 20px;
+				border-right: 15px solid #ffadad;
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+			}
+			.balloon1 {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 0;
+				padding: 7px 10px;
+				min-width: 120px;
+				max-width: 100%;
+				color: #555;
+				font-size: 16px;
+				background: #e0edff;
+				border-radius: 15px;
+			}
+			
+			.balloon1:before {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-top: 15px solid #e0edff;
+			}
+			
+			.balloon1 p {
+				margin: 0;
+				padding: 0;
+			}
+			/* 上向き　https://saruwakakun.com/html-css/reference/speech-bubble */
+			.balloon3-top {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 0;
+				padding: 0 5px;
+				width: 90px;
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				color: #FFF;
+				font-size: 20px;
+				font-weight: bold;
+				background: #415e34;
+				border-radius: 50%;
+				box-sizing: border-box;
+			}
+			
+			.balloon3-top:before {
+				content: "";
+				position: absolute;
+				top: -25px;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-bottom: 15px solid #415e34;
+				z-index: 0;
+			}
+			
+			.balloon2-right {
+				position: relative;
+				display: inline-block;
+				margin: 1.5em 15px 1.5em 0;
+				padding: 7px 10px;
+				min-width: 120px;
+				max-width: 100%;
+				color: #555;
+				font-size: 16px;
+				background: #a18db4;
+				border: solid 3px #a18db4;
+				box-sizing: border-box;
+			}
+			
+			.balloon2-right:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -24px;
+				margin-top: -12px;
+				border: 12px solid transparent;
+				border-left: 12px solid #a18db4;
+				z-index: 2;
+			}
+			
+			.balloon2-right:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -30px;
+				margin-top: -14px;
+				border: 14px solid transparent;
+				border-left: 14px solid #a18db4;
+				z-index: 1;
+			}
+			
+			.balloon2-right p {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+				<section style="text-align: left;">
+						<h3>二枚の簿冊カヴァーと<br>19世紀フィンランドのアルキーヴ実務</h3>
+						<div class="balloon3-top">
+							<a href="https://researchmap.jp/20396336"target="_blank">平井孝典</a>
+						</div>
+				</section>
+					<section style="text-align: left;">
+						<p>Google ChromeあるいはChromiumでPDF出力する</p>
+						<hr>
+						<ul>
+							<li>URLの最後に<font color="#edd5d5">?print-pdf</font>を付与</li>
+							<li>CTRL/CMD+P</li>
+							<li>送信先「PDFに保存」を選択</li>
+							<li>「1枚あたりのページ数」など調整</li>
+							<li>escで全体表示。sボタンで別ウィンドウ次ページ表示</li>
+						</ul> 
+					</section>
+				</section>
+				<section>
+				<section style="text-align: left;">
+						<p><font color="#ffffff">はじめに　グルーンブラードの視点</font></p>
+					<hr>
+						<p>グルーンブラードは、フィンランド文学協会の資料紹介などの雑誌、Suomi(フィンランド)の1846年版に、「二つの資料　グルーンブラードによる報告」を載せている。この中で、この資料の業務が行われるまで、フィンランドで、資料に関し秩序や由来に注意を向けられることはなかったと述べている。この指摘についてフィンランドのアーカイブズ実務史の中でどのような意味をもつか、本稿では確認しておきたい。
+					</p>
+				</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">1.フィンランドのアルキーヴ実務</font></p>
+						<hr>
+						<p>⑤中世ラテン語資料が扱える人物の雇用(1833年と1843年以降)、⑥エドヴァルド・グルーンブラード(Jakob Edvard August Grönblad, 1814-1864)の中世断簡資料整理と人員拡充</p>
+					</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">2. グルーンブラードの業務</font></p>
+						<hr>
+						<p>論文「二つの資料　グルーンブラードによる報告」でグルーンブラードは、表紙について報告する。一つは、1463年2月3日にオーボ大聖堂のチャペルの一つに配置されたも書籍の一部、もう一つは、フランシスコ会で1479年7月26日に所蔵されたも書籍の一部である。一万片以上の表紙のうちの二つである。
+						</p>
+					</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">3. スウェーデンでの実務</font></p>
+						<hr>
+						<p>スウェーデンで近代的な実務が確立していくのは1830年代以降である。フィンランドは、1809年までスウェーデンの東部地域であり、アーカイブズ実務は同じ文化圏であった。19世紀は独自の道を歩み始めたところである。グルーンブラードは、1830年代にウップサラ大学でガイヤーらに学んでいる。ガイヤーらはドイツのランケ実証主義に関心をもち、アーカイブズ資料の積極的な利用者であった。
+						</p>
+					</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">4. 国立図書館とグルーンブラード</font></p>
+						<hr>
+						<p>1640年に設立された大学図書館(国立図書館)は、1840年代50年代に古い図書やマヌスクリプトを扱うことのできる人物を複数雇用している。アーカイブズ資料の所蔵も多い図書館である。雇用された一人グルーンブラードは、中世資料、つまりラテン語のよく読める人物である。</p>
+					</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">5. アーカイブズ史での指摘</font></p>
+						<hr>
+						<ul>
+							<li>公的な素描</li>
+							<li>50年での移管</li>
+							<li>出所原則</li>
+						</ul> 
+					</section>
+					<section style="text-align: left;">
+						<p><font color="#ffffff">6. タイットーの補足</font></p>
+						<hr>
+						<p>タイットーは、徴税の資料と図書の旧蔵教会がおおよそ一致しつつ完全には一致しない、ことに注目する。断簡は地方の帳簿を運ぶのに利用され、首都で簿冊を綴じるのにもさらに利用されたなどと推測した。
+							
+							
+							
+</p>
+					</section>
+				</section>
+				
+				
+				<section data-markdown style="text-align: left;">
+					<textarea data-template>
+### フィンランド中世カトリック教会断簡コレクションのデジタル公開
+https://fujijoshi.repo.nii.ac.jp/records/1560
+
+---
+## はじめに
+　フィンランド中世カトリック教会断簡コレクションは、 2012年にフィンランド国立図書館の専用サイトでデジタル公開され閲覧が容易になった資料群である。断簡は11世紀から16世紀にカトリック教会の修道院や教会に配置された刊行物であった。解体され、 16世紀から約100年にわたり行政文書簿冊のバインディングに流用された。表紙は劣化後に順次、 取り替えられ廃棄されるはずであった。
+・・・
+---
+ところが、 19世紀にフィンランドの大学図書館アルキヴァーリエ・グルーンブラード（Edvard Grönblad, 1814–1864）が表紙の価値を認めたことから欧州最大規模のカトリック教会旧蔵資料コレクションとして今日まで残されることになる。
+---
+## 1. 中世カトリック教会断簡資料
+　中世カトリック教会断簡資料（例として＜table 1＞）は、 9世紀頃のキリスト教伝来以後、 スウェーデン及びフィンランドの各教会に配置された刊行物（手書及び印刷刊行物）が基本的には紙片単位で解体されたものである。材質は主に羊皮紙である。本の状態であったとき、 それは、 聖書、 典礼関係のマニュアル、 カノン、 ミサで用いられる楽譜などが記載された大型本（codex）であった。
+
+---
+## 2. ヘルシンキ大学図書館アルキヴァーリエ・グルーンブラードによる価値の確認と保存作業
+　グルーンブラードはウップサラ大学でスウェーデン東部地域（フィンランド）研究により学位を授与された職業アルキヴァーリエである。大学図書館アルキヴァーリエではあるがセナーッティ公文書館からも業務を委託され一定の時間はセナーッティ公文書館に出向した。
+---
+## 2.1 グルーンブラードによる作業成立の状況
+　1843年にグルーンブラードは、 大学図書館のスウェーデン王室関係資料・会計帳簿などの簿冊（ファイル、 pärmar）の表紙部分に注意を向けた。表紙部分は、 上質の羊皮紙であるだけでなく、 音符やラテン語の文字が断片的に見える。
+---
+## 2.2 グルーンブラードらの作業
+　グルーンブラードの作業ノートには、どの表紙にどの断簡がバインダーとして使用されていたか、さらにはどのような刊行物の一部と考えられるか、詳細に記述されている。勤務先の図書館で保存されてきた作業ノート全体の中で、Mannual Aboenceに関わる記述がより多く残されている
+---
+## 3.スウェーデンとフィンランドでのデジタル公開
+- 3.1 スウェーデンでのデジタル公開
+- 3.2  CCMプロジェクト
+- 3.3  MPOプロジェクト
+- 3.4 統合検索NADと特殊資料検索MPO
+- 3.5 フィンランドでのデジタル公開
+
+
+
+
+
+</textarea>
+				</section>
+				<section style="text-align: left;">
+					<p><font color="#ffffff">デジタル公開</font></p>
+					<hr>
+					<ul>
+						<li><a href="https://sok.riksarkivet.se/"target="_blank">スウェーデンでのデジタル公開</a></li>
+						<li><a href="https://fragmenta.kansalliskirjasto.fi/"target="_blank">フィンランドでのデジタル公開</a></li>
+					</ul> 
+				</section>
+			</div>
+			
+		</div>
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+			
+		</script>
+		
+	</body>
+</html>
