@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>藤女子大学の財政上の特徴</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #2c3e50;
+        }
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal .title-slide {
+            text-align: center;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        .bar-chart {
+            width: 100%;
+            max-width: 600px;
+        }
+        .bar {
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+        }
+        .bar-label {
+            width: 120px;
+            font-size: 14px;
+        }
+        .bar-fill {
+            height: 25px;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            margin-right: 10px;
+        }
+        .bar-value {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .feature-box {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .comparison-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        .fuji-highlight {
+            background-color: #f39c12;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- タイトルスライド -->
+            <section class="title-slide">
+                <h1>藤女子大学の財政上の特徴</h1>
+                <h3>私立女子大学としての財務構造分析</h3>
+                <p>
+                    <small>2024年度 データに基づく分析</small>
+                </p>
+            </section>
+
+            <!-- 大学概要 -->
+            <section>
+                <h2>藤女子大学 概要</h2>
+                <div class="feature-box">
+                    <h3>🏛️ 歴史と特徴</h3>
+                    <ul>
+                        <li><strong>設立</strong>: 1925年（創立100年を迎える歴史ある大学）</li>
+                        <li><strong>所在地</strong>: 北海道札幌市</li>
+                        <li><strong>性格</strong>: カトリック系私立女子大学</li>
+                        <li><strong>学部構成</strong>: 文学部、ウェルビーイング学部（2025年名称変更）</li>
+                    </ul>
+                </div>
+                <p><small>※ 人間生活学部 → ウェルビーイング学部（2025年4月より）</small></p>
+            </section>
+
+            <!-- 私立大学の財政構造 -->
+            <section>
+                <h2>私立大学の一般的な財政構造</h2>
+                <div class="chart-container">
+                    <div class="bar-chart">
+                        <div class="bar">
+                            <div class="bar-label">学納金収入</div>
+                            <div class="bar-fill" style="width: 77%"></div>
+                            <div class="bar-value">77%</div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-label">私学助成</div>
+                            <div class="bar-fill" style="width: 12%"></div>
+                            <div class="bar-value">12%</div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-label">その他</div>
+                            <div class="bar-fill" style="width: 11%"></div>
+                            <div class="bar-value">11%</div>
+                        </div>
+                    </div>
+                </div>
+                <p><small>出典: 文部科学省データに基づく私立大学平均</small></p>
+            </section>
+
+            <!-- 学費水準の比較 -->
+            <section>
+                <h2>学費水準の位置づけ</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>項目</th>
+                            <th>私立大学平均（2024年度）</th>
+                            <th>藤女子大学の特徴</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>初年度納付金</td>
+                            <td>約148万円</td>
+                            <td class="fuji-highlight">詳細は要確認</td>
+                        </tr>
+                        <tr>
+                            <td>授業料</td>
+                            <td>約96万円</td>
+                            <td class="fuji-highlight">学科により異なる</td>
+                        </tr>
+                        <tr>
+                            <td>入学金</td>
+                            <td>約24万円</td>
+                            <td class="fuji-highlight">標準的水準</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><small>※ 文部科学省「私立大学等の学生納付金等調査結果」より</small></p>
+            </section>
+
+            <!-- 財政上の特徴1 -->
+            <section>
+                <h2>財政上の特徴 ①</h2>
+                <div class="feature-box">
+                    <h3>🎓 学納金依存型の収入構造</h3>
+                    <ul>
+                        <li><span class="highlight">学生納付金が収入の大部分を占める</span>典型的な私立大学構造</li>
+                        <li>文系学部中心のため、比較的教育コストが抑制されている</li>
+                        <li>実験設備等の高額な維持費が相対的に少ない</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>📍 地域性による影響</h3>
+                    <ul>
+                        <li>北海道という地域特性により、全国規模での学生募集が重要</li>
+                        <li>地域密着型の教育により安定した学生確保</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 財政上の特徴2 -->
+            <section>
+                <h2>財政上の特徴 ②</h2>
+                <div class="feature-box">
+                    <h3>👩‍🎓 女子大学としての特色</h3>
+                    <ul>
+                        <li>女子教育に特化した<span class="highlight">100年の歴史と実績</span></li>
+                        <li>ブランド力による安定した志願者確保</li>
+                        <li>卒業生ネットワークによる継続的な支援基盤</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>🔄 学部名称変更の戦略</h3>
+                    <ul>
+                        <li>2025年「ウェルビーイング学部」への名称変更</li>
+                        <li>時代のニーズに対応した<span class="highlight">ブランド刷新戦略</span></li>
+                        <li>新たな学生層の獲得による収入基盤強化</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 財政上の特徴3 -->
+            <section>
+                <h2>財政上の特徴 ③</h2>
+                <div class="feature-box">
+                    <h3>💰 学費納入システム</h3>
+                    <ul>
+                        <li><span class="highlight">前期・後期の2期分割納入</span>制度</li>
+                        <li>複数の金融機関との提携（北洋銀行・北海道銀行）</li>
+                        <li>ゆうちょ銀行での振込も可能</li>
+                        <li>入学手続時の一括納入オプション</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>📊 キャッシュフロー管理</h3>
+                    <ul>
+                        <li>4月・9月の定期的な収入サイクル</li>
+                        <li>年度内の資金繰りの安定化</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 経営環境と課題 -->
+            <section>
+                <h2>経営環境と財政課題</h2>
+                <div class="feature-box">
+                    <h3>⚠️ 私立大学業界全体の課題</h3>
+                    <ul>
+                        <li>私立大学法人の<span class="highlight">約4割が赤字経営</span></li>
+                        <li>2019年度末までに287件が経営破綻予備軍に分類</li>
+                        <li>18歳人口の減少による競争激化</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>💡 藤女子大学の対応戦略</h3>
+                    <ul>
+                        <li>学部・学科名称の現代化による魅力向上</li>
+                        <li>地域連携・産学連携の強化</li>
+                        <li>100年の歴史というブランド力の活用</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 今後の展望 -->
+            <section>
+                <h2>今後の財政展望</h2>
+                <div class="feature-box">
+                    <h3>🚀 成長戦略</h3>
+                    <ul>
+                        <li><span class="highlight">ウェルビーイング学部</span>への改組による差別化</li>
+                        <li>現代社会のニーズに対応した教育内容の刷新</li>
+                        <li>地域創生学科・食環境マネジメント学科の新設</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>🎯 財政安定化の要因</h3>
+                    <ul>
+                        <li>カトリック系大学としての独自性</li>
+                        <li>北海道での確固たる地位</li>
+                        <li>女子教育100年の実績と信頼</li>
+                        <li>時代に対応した教育改革</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- まとめ -->
+            <section class="title-slide">
+                <h2>まとめ</h2>
+                <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+                    <h3>藤女子大学の財政的特徴</h3>
+                    <ol>
+                        <li><strong>学納金依存型</strong>の典型的私立大学財政構造</li>
+                        <li><strong>100年の歴史</strong>によるブランド力と安定性</li>
+                        <li><strong>地域密着型</strong>の運営による学生確保</li>
+                        <li><strong>時代対応型</strong>の学部改組による競争力強化</li>
+                        <li><strong>効率的な学費徴収</strong>システムの構築</li>
+                    </ol>
+                    <br>
+                    <p style="text-align: center;"><em>歴史と革新のバランスを保った持続可能な財政運営</em></p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: false,
+            keyboard: true,
+            overview: true,
+            loop: false,
+            rtl: false,
+            shuffle: false,
+            fragments: true,
+            fragmentInURL: false,
+            embedded: false,
+            help: true,
+            showNotes: false,
+            autoPlayMedia: null,
+            preloadIframes: null,
+            autoSlide: 0,
+            autoSlideStoppable: true,
+            autoSlideMethod: null,
+            defaultTiming: null,
+            mouseWheel: false,
+            hideInactiveCursor: true,
+            hideCursorTime: 5000,
+            previewLinks: false,
+            postMessage: true,
+            postMessageEvents: false,
+            focusBodyOnPageVisibilityChange: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            viewDistance: 3,
+            mobileViewDistance: 2,
+            display: 'block',
+            hideAddressBar: true,
+            dependencies: []
+        });
+    </script>
+</body>
+</html>
