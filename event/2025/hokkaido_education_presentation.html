@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>情報活用能力の育成を支える学校図書館とICTの活用</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.css">
+<!--
+2023leaflet.pdfを使って、revealjsのプレゼンを重厚なデザインで作成してください。よろしくお願い申し上げます。20250615_14_50
+-->
+    <style>
+        .reveal {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+        }
+        
+        .reveal .slides section {
+            text-align: left;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: 2px solid #4a6ba8;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .reveal h1 {
+            font-size: 2.2em;
+            text-align: center;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .reveal h2 {
+            font-size: 1.8em;
+            border-bottom: 3px solid #4ecdc4;
+            padding-bottom: 10px;
+        }
+        
+        .reveal h3 {
+            font-size: 1.4em;
+            color: #4ecdc4;
+        }
+        
+        .reveal p, .reveal li {
+            color: #e8e8e8;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .reveal ul {
+            margin-left: 30px;
+        }
+        
+        .reveal li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight-box {
+            background: rgba(78, 205, 196, 0.2);
+            border-left: 5px solid #4ecdc4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .important-text {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .center-text {
+            text-align: center;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .grid-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .steps-container {
+            counter-reset: step-counter;
+        }
+        
+        .step-item {
+            counter-increment: step-counter;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 60px;
+        }
+        
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            background: #4ecdc4;
+            color: #1e3c72;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+        
+        .reveal .progress {
+            color: #4ecdc4;
+        }
+        
+        .reveal .controls {
+            color: #4ecdc4;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- タイトルスライド -->
+            <section>
+                <h1>情報活用能力の育成を支える<br>学校図書館とICTの活用</h1>
+                <div class="center-text" style="margin-top: 50px;">
+                    <p style="font-size: 1.3em; color: #4ecdc4;">北海道教育庁</p>
+                    <p>生涯学習推進局社会教育課</p>
+                    <p>ICT教育推進局ICT教育推進課</p>
+                    <div style="margin-top: 40px; font-size: 0.9em; color: #aaa;">
+                        令和6年3月発行
+                    </div>
+                </div>
+            </section>
+
+            <!-- 背景・課題認識 -->
+            <section>
+                <h2>背景・課題認識</h2>
+                <div class="highlight-box">
+                    <p><span class="important-text">将来の予測が難しい今日の社会</span>においては、<br>情報を適切に活用する力が求められています。</p>
+                </div>
+                <ul>
+                    <li>学習指導要領では、学習の基盤となる資質・能力の一つとして<span class="important-text">情報活用能力</span>が位置付けられている</li>
+                    <li>各教科等の特質に応じて、適切な場面で育成していく必要がある</li>
+                    <li>学校図書館の機能充実とICT活用の融合が重要</li>
+                </ul>
+            </section>
+
+            <!-- 情報活用能力とは -->
+            <section>
+                <h2>情報活用能力とは</h2>
+                <div class="highlight-box">
+                    <p>世の中の様々な事象と情報をその結び付きとして捉え、情報及び情報技術を適切かつ効果的に活用して、<span class="important-text">問題を発見・解決したり自分の考えを形成したり</span>していくために必要な資質・能力</p>
+                </div>
+                <div class="center-text" style="margin-top: 30px;">
+                    <p style="font-size: 1.2em; color: #4ecdc4;">↓</p>
+                    <p><span class="important-text">「学校図書館を活用した学び」</span>と<span class="important-text">「ICTを活用した学び」</span>を効果的に組み合わせることで実現</p>
+                </div>
+            </section>
+
+            <!-- 学校図書館とICTの役割分担 -->
+            <section>
+                <h2>学校図書館とICTの役割</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>学校図書館</h3>
+                        <ul>
+                            <li>図書のほか、新聞やデジタル資料を含む各種資料などの情報収集</li>
+                            <li>著作権の取扱いについての指導</li>
+                            <li>司書教諭や学校司書による専門的な指導や支援</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h3>1人1台端末等のICT環境</h3>
+                        <ul>
+                            <li>インターネット上の情報の閲覧・検索</li>
+                            <li>表やグラフなどを用いたプレゼンテーションの作成</li>
+                            <li>クラウドサービスを用いた情報の共有</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ICT環境の整備 -->
+            <section>
+                <h2>学校図書館におけるICT環境の整備</h2>
+                <h3>整備のポイント</h3>
+                <div class="steps-container">
+                    <div class="step-item">
+                        <strong>今、学校にあるものを組み合わせる</strong><br>
+                        既存の設備を有効活用
+                    </div>
+                    <div class="step-item">
+                        <strong>学校図書館でICTを活用できるようにする</strong><br>
+                        端末が使える環境づくり
+                    </div>
+                    <div class="step-item">
+                        <strong>蔵書検索機能やリンク集へのアクセス設定</strong><br>
+                        1人1台端末からいつでも検索可能に
+                    </div>
+                </div>
+            </section>
+
+            <!-- 実践事例1 -->
+            <section>
+                <h2>実践事例①</h2>
+                <h3>茨城県つくば市立みどりの学園義務教育学校</h3>
+                <div class="highlight-box">
+                    <p>学校図書館（「図書・メディア室」）の中に端末を用い情報を収集することができるスペースを設置</p>
+                </div>
+                <ul>
+                    <li>多様な学びを支える環境を構築</li>
+                    <li>図書館内で情報収集と資料活用が同時に可能</li>
+                    <li>学習スタイルの多様化に対応</li>
+                </ul>
+            </section>
+
+            <!-- 実践事例2 -->
+            <section>
+                <h2>実践事例②</h2>
+                <h3>東京都 中央大学附属中学校・高等学校</h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h4>環境整備の工夫</h4>
+                        <ul>
+                            <li>壁面を大型スクリーンとして活用</li>
+                            <li>1人1台端末のデータ投影</li>
+                            <li>大きな机で端末と書籍を併用</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h4>検索機能の充実</h4>
+                        <ul>
+                            <li>蔵書検索機能を端末に設定</li>
+                            <li>電子書籍の検索も可能</li>
+                            <li>資料の即座活用を実現</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 授業での活用 -->
+            <section>
+                <h2>学校図書館とICTの効果的な授業での活用</h2>
+                <h3>授業での活用のポイント</h3>
+                <div class="steps-container">
+                    <div class="step-item">
+                        <strong>児童生徒が主体的に様々な資料を活用できる体制整備</strong>
+                    </div>
+                    <div class="step-item">
+                        <strong>公立図書館との連携</strong><br>
+                        各種資料等を児童生徒が活用できるように
+                    </div>
+                    <div class="step-item">
+                        <strong>人的・物的資源の効果的な組み合わせ</strong><br>
+                        学校全体での授業づくり
+                    </div>
+                </div>
+            </section>
+
+            <!-- 連携体制 -->
+            <section>
+                <h2>効果的な連携体制</h2>
+                <div class="highlight-box">
+                    <p class="center-text">学校司書とICT支援員、司書教諭とICT担当教諭が、それぞれの強みを持ち寄り、連携・協働体制を構築</p>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h4>図書館専門職</h4>
+                        <ul>
+                            <li>資料の専門的知識</li>
+                            <li>情報リテラシー指導</li>
+                            <li>著作権指導</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h4>ICT専門職</h4>
+                        <ul>
+                            <li>技術的サポート</li>
+                            <li>デジタル活用指導</li>
+                            <li>システム環境整備</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 取組のポイント -->
+            <section>
+                <h2>情報活用能力育成に向けた取組のポイント</h2>
+                <div style="font-size: 0.9em;">
+                    <div class="step-item">
+                        <strong>現状把握</strong> - 学校図書館の現状を把握し、公立図書館等へ相談
+                    </div>
+                    <div class="step-item">
+                        <strong>実態調査</strong> - アンケート等で児童生徒の情報活用能力の状況を把握
+                    </div>
+                    <div class="step-item">
+                        <strong>カリキュラム確認</strong> - 各教科等での情報活用能力育成を確認
+                    </div>
+                    <div class="step-item">
+                        <strong>共通理解</strong> - 学校で育てたい情報活用能力の共通理解
+                    </div>
+                    <div class="step-item">
+                        <strong>計画立案</strong> - 具体的な実践を検討・計画に位置付け
+                    </div>
+                    <div class="step-item">
+                        <strong>実践共有</strong> - 効果的な方法を学校全体に拡大
+                    </div>
+                    <div class="step-item">
+                        <strong>先進事例活用</strong> - 先進校・先進地域の資料活用や視察
+                    </div>
+                </div>
+            </section>
+
+            <!-- まとめ -->
+            <section>
+                <h2>まとめ</h2>
+                <div class="highlight-box">
+                    <p class="center-text" style="font-size: 1.3em;"><span class="important-text">学校図書館とICTを効果的に組み合わせて、児童生徒の情報活用能力の育成を図るとともに、各校の既存の学校設備を十分に活用できる体制整備を進めていきましょう。</span></p>
+                </div>
+                <div class="center-text" style="margin-top: 40px;">
+                    <p style="color: #4ecdc4; font-size: 1.2em;">質の高い情報活用能力の育成を目指して</p>
+                    <p>紙の書籍とデジタル情報を組み合わせた学習環境の実現</p>
+                </div>
+                <div class="footer">
+                    北海道教育庁 生涯学習推進局社会教育課 / ICT教育推進局ICT教育推進課
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            history: true,
+            center: false,
+            touch: true,
+            loop: false,
+            rtl: false,
+            navigationMode: 'default',
+            keyboard: true,
+            overview: true,
+            disableLayout: false,
+            parallaxBackgroundImage: '',
+            parallaxBackgroundSize: '',
+            parallaxBackgroundHorizontal: null,
+            parallaxBackgroundVertical: null,
+            display: 'block'
+        });
+    </script>
+</body>
+</html>
