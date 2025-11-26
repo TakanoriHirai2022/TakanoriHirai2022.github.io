@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>藤女子大学の現在 - SQLiteとFlask</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #2c3e50;
+        }
+        .reveal {
+            font-size: 32px;
+        }
+        .reveal pre {
+            width: 100%;
+            font-size: 0.55em;
+        }
+        .reveal code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .note {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+            .balloon1 {
+                position: relative;
+                display: inline-block;
+                margin: 1.5em 0;
+                padding: 7px 10px;
+                min-width: 120px;
+                max-width: 100%;
+                color: #555;
+                font-size: 16px;
+                background: #e0edff;
+            }
+            
+            .balloon1:before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -15px;
+                border: 15px solid transparent;
+                border-top: 15px solid #e0edff;
+            }
+            
+            .balloon1 p {
+                margin: 0;
+                padding: 0;
+            }
+            .balloon2-top {
+                position: relative;
+                display: inline-block;
+                margin: 1.5em 0;
+                padding: 7px 10px;
+                min-width: 120px;
+                max-width: 100%;
+                color: #555;
+                font-size: 16px;
+                background: #FFF;
+                border: solid 3px #555;
+                box-sizing: border-box;
+            }
+            
+            .balloon2-top:before {
+                content: "";
+                position: absolute;
+                top: -24px;
+                left: 50%;
+                margin-left: -15px;
+                border: 12px solid transparent;
+                border-bottom: 12px solid #FFF;
+                z-index: 2;
+            }
+            
+            .balloon2-top:after {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                margin-left: -17px;
+                border: 14px solid transparent;
+                border-bottom: 14px solid #555;
+                z-index: 1;
+            }
+            
+            .balloon2-top p {
+                margin: 0;
+                padding: 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- タイトルスライド -->
+                <section>
+                    <div>
+                    <h1>藤女子大学(全学生対象)</h1>
+                    <hr>
+                    <ul>
+                        <li>Pythonを各自パソコンにインストール</li>
+                            <li>ターミナルやパワーシェルで実行</li>
+                        <li>各種計算を繰り返す</li>
+                        <li>最終的にFlaskアプリ作成</li>
+                    </ul>
+                    </div>
+                    <div class="balloon1">
+                        <p>藤女子大学データサイエンス教育推進委員会(2025年12月5日)</p>
+                    </div>
+                    <div class="balloon2-top">
+                        <p>令和7年度第1回北海道ブロック会議<br>数理・データサイエンス・AI教育強化拠点コンソーシアム</p>
+                    </div>
+                </section>
+            <section>
+                <h1>概　要</h1>
+                    <h3><a href="https://www.fujijoshi.ac.jp/dept/mds" target="_blank">数理・データサイエンス・AI教育プログラム</a><br>（リテラシーレベル）</h3>
+                <p>藤女子大学のホームページに掲載</p>
+            </section>
+
+            <!-- これまでの授業の振り返り -->
+            <section>
+                    <h2>最近の授業内容</h2>
+                <ul>
+                        <li>📊 札幌市の<a href="https://data.pf-sapporo.jp/" target="_blank">オープンデータ</a>利用</li>
+                    <li>📚 青空文庫データを使ったcos類似度計算</li>
+                    <li>🐍 Pythonによるデータ分析の基礎</li>
+                </ul>
+                <p class="note">データを「読む」「分析する」ことを学んできました</p>
+            </section>
+
+            <!-- 今日のゴール -->
+            <section>
+                    <h2>SQLiteとFlaskアプリケーション開発</h2>
+                <ol>
+                    <li>SQLiteデータベースの理解</li>
+                    <li>データベース言語（SQL）の基礎</li>
+                    <li>Flaskを使ったWebアプリ作成</li>
+                </ol>
+                <p class="note">データを「保存する」「管理する」スキルも習得</p>
+            </section>
+
+           
+
+            
+
+            <!-- 参考資料 -->
+            <section>
+                <h2>📖 参考資料</h2>
+                <ul style="font-size: 0.8em;">
+                        <li>Python公式ドキュメント:<a href="https://www.python.org/" target="_blank">python.org</a></li>
+                        <li>SQLite公式ドキュメント: <a href="https://www.sqlite.org/" target="_blank">sqlite.org</a></li>
+                        <li>Flask公式ドキュメント: <a href="https://flask.palletsprojects.com/" target="_blank">flask.palletsprojects.com</a></li>
+                    
+                </ul>
+                <p style="margin-top: 50px; font-size: 1.2em;">質問はいつでもどうぞ！</p>
+                    <p style="margin-top: 50px; font-size: 1.2em;">↑学生にhtml(マークダウン)で資料配布しています</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            plugins: [RevealHighlight]
+        });
+    </script>
+</body>
+</html>
