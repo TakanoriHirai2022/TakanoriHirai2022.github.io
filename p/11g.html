@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>図書館情報学課程 受講説明会 | 今年度入学者対象</title>
+  <meta name="description" content="藤女子大学 図書館情報学課程 受講説明会 スライド資料">
+  <meta name="author" content="平井 孝典">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex">
+
+  <!-- Reveal.js & Theme CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css" id="theme">
+
+  <!-- Google Fonts: Noto Sans JP & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       Design System & Modern Glassmorphic Presentation Styles
+       ========================================================================== */
+    :root {
+      --bg-dark-1: #090d16;
+      --bg-dark-2: #0f172a;
+      --bg-dark-3: #1e1b4b;
+      
+      --accent-teal: #14b8a6;
+      --accent-teal-light: #2dd4bf;
+      --accent-sky: #38bdf8;
+      --accent-indigo: #6366f1;
+      --accent-violet: #8b5cf6;
+      --accent-rose: #f43f5e;
+      --accent-amber: #f59e0b;
+      
+      --text-white: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    /* Base Typography & Background */
+    body, .reveal-viewport {
+      font-family: 'Noto Sans JP', sans-serif !important;
+      background: radial-gradient(circle at 50% 20%, #1e1b4b 0%, #0f172a 50%, #030712 100%) !important;
+      color: var(--text-white) !important;
+    }
+
+    .reveal {
+      font-family: 'Noto Sans JP', sans-serif !important;
+      color: var(--text-white) !important;
+    }
+
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif !important;
+      color: var(--text-white) !important;
+      text-transform: none !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.02em !important;
+      line-height: 1.25 !important;
+      margin-bottom: 0.6em;
+    }
+
+    .reveal p, .reveal li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #cbd5e1;
+      font-weight: 400;
+    }
+
+    .reveal a {
+      color: var(--accent-sky);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .reveal a:hover {
+      color: var(--accent-teal-light);
+      text-decoration: underline;
+    }
+
+    /* Glass Card Container */
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2.2rem 2.8rem;
+      box-shadow: var(--card-shadow);
+      margin: 0.5rem auto !important;
+      max-width: 1050px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card.text-center {
+      text-align: center;
+    }
+
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-teal), var(--accent-sky), var(--accent-indigo));
+    }
+
+    /* Badges & Tags */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.85rem !important;
+      font-weight: 600;
+      padding: 0.3rem 0.9rem;
+      border-radius: 9999px;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.8rem;
+      background: rgba(99, 102, 241, 0.15);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+    .badge-teal {
+      background: rgba(20, 184, 166, 0.15);
+      color: var(--accent-teal-light);
+      border-color: rgba(20, 184, 166, 0.3);
+    }
+    .badge-rose {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fda4af;
+      border-color: rgba(244, 63, 94, 0.3);
+    }
+    .badge-amber {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fcd34d;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    /* Gradients & Text Accents */
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 50%, #c084fc 100%);
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      display: inline-block;
+    }
+
+    .highlight-keyword {
+      color: #f1f5f9;
+      background: rgba(20, 184, 166, 0.18);
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+      font-weight: 600;
+      border-bottom: 2px solid var(--accent-teal);
+    }
+
+    .highlight-accent {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .highlight-warning {
+      color: #fb7185;
+      font-weight: 600;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    /* Agenda Card Styling */
+    .agenda-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 1.4rem;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .agenda-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-3px);
+    }
+    .agenda-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--accent-sky);
+      opacity: 0.8;
+      margin-bottom: 0.5rem;
+    }
+    .agenda-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 0.4rem;
+    }
+    .agenda-desc {
+      font-size: 0.85rem !important;
+      color: var(--text-muted) !important;
+      line-height: 1.5 !important;
+      margin: 0 !important;
+    }
+
+    /* Q&A Component */
+    .qa-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 1.5rem 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .qa-question {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      font-size: 1.25rem !important;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      padding-bottom: 0.8rem;
+    }
+    .qa-q-badge {
+      background: linear-gradient(135deg, #f43f5e, #fb7185);
+      color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      line-height: 1.2;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .qa-answer {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      font-size: 1.05rem !important;
+      color: #cbd5e1 !important;
+      line-height: 1.7 !important;
+    }
+    .qa-a-badge {
+      background: linear-gradient(135deg, #0d9488, #14b8a6);
+      color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0.2rem 0.65rem;
+      border-radius: 6px;
+      line-height: 1.2;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* Clean Modern Table */
+    .modern-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 1.2rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 1rem;
+    }
+    .modern-table th {
+      background: rgba(30, 41, 59, 0.85);
+      color: var(--text-white);
+      font-weight: 700;
+      padding: 0.9rem 1.2rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+    }
+    .modern-table td {
+      padding: 0.9rem 1.2rem;
+      background: rgba(15, 23, 42, 0.4);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+    }
+    .modern-table tr:last-child td {
+      border-bottom: none;
+    }
+    .modern-table tr:hover td {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    /* Flow / Step Cards */
+    .flow-steps {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .flow-step-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.4rem;
+      position: relative;
+    }
+    .flow-step-card.active {
+      border-color: rgba(56, 189, 248, 0.4);
+      background: rgba(56, 189, 248, 0.05);
+    }
+    .flow-step-badge {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-sky);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .flow-step-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+    .flow-step-period {
+      font-size: 0.95rem;
+      color: #fcd34d;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .flow-step-desc {
+      font-size: 0.85rem !important;
+      color: var(--text-muted) !important;
+      line-height: 1.5 !important;
+      margin: 0 !important;
+    }
+
+    /* Course Comparison Cards */
+    .course-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 1.6rem;
+      position: relative;
+    }
+    .course-card.highlight {
+      border-color: rgba(45, 212, 191, 0.4);
+      background: rgba(45, 212, 191, 0.04);
+    }
+    .course-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .course-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .course-price {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #38bdf8;
+    }
+    .course-price-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* List styling */
+    .icon-list {
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin: 0.8rem 0 !important;
+    }
+    .icon-list li {
+      position: relative;
+      padding-left: 1.8rem !important;
+      margin-bottom: 0.6rem !important;
+      font-size: 0.95rem !important;
+      color: #cbd5e1;
+    }
+    .icon-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent-teal);
+      font-weight: 700;
+    }
+
+    /* Browser Mockup for Iframes */
+    .browser-frame {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #0f172a;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      margin: 1rem auto;
+      max-width: 1050px;
+    }
+    .browser-bar {
+      background: #1e293b;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .browser-dots {
+      display: flex;
+      gap: 6px;
+    }
+    .browser-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+    .browser-url {
+      background: rgba(15, 23, 42, 0.7);
+      border-radius: 6px;
+      padding: 0.2rem 0.8rem;
+      font-family: 'Plus Jakarta Sans', monospace;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      flex-grow: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .browser-link-btn {
+      font-size: 0.8rem !important;
+      padding: 0.2rem 0.6rem;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-sky) !important;
+      border-radius: 6px;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      white-space: nowrap;
+    }
+
+    /* Library photo cards */
+    .library-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+    .library-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .library-item:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-3px);
+    }
+    .library-img-container {
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 0.8rem;
+      background: rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .library-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0 !important;
+    }
+    .library-img-placeholder {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Print instruction pill */
+    .print-tip {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+
+    /* Slide Controls & Numbers */
+    .reveal .slide-number {
+      font-family: 'Plus Jakarta Sans', sans-serif !important;
+      font-size: 0.9rem !important;
+      background-color: rgba(15, 23, 42, 0.6) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-radius: 6px !important;
+      color: #94a3b8 !important;
+      padding: 4px 8px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ==========================================
+           SLIDE 0: COVER / TITLE
+           ========================================== -->
+      <section>
+        <section>
+          <div class="glass-card text-center" style="padding: 3.5rem 2rem;">
+            <span class="badge badge-teal">藤女子大学 2026年度</span>
+            <h1 style="font-size: 2.8rem; margin: 1rem 0;">
+              図書館情報学課程<br>
+              <span class="gradient-text">受講説明会</span>
+            </h1>
+            <p style="font-size: 1.25rem; color: #e2e8f0; font-weight: 500; margin-bottom: 2rem;">
+              今年度入学者対象（1年次生向け）
+            </p>
+
+            <div style="display: inline-flex; gap: 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 0.9rem 1.8rem; border-radius: 12px; font-size: 0.95rem;">
+              <div>👨‍🏫 担当教員：<strong>平 井 孝 典</strong></div>
+              <div>📍 会場：<strong>16条キャンパス 655教室 ＋ ハイフレックス</strong></div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <span class="print-tip">
+                📄 <strong>PDF保存方法</strong>: URL末尾に <code>?print-pdf</code> を付与 ➔ Ctrl / Cmd + P ➔ 「PDFに保存」
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 0.2: PDF Export Details -->
+        <section>
+          <div class="glass-card">
+            <span class="badge">Reference Guide</span>
+            <h2>スライドのPDF出力・保存について</h2>
+            <p style="margin-bottom: 1.5rem;">Google Chrome または Chromium ブラウザを使用すると、本スライドを綺麗なPDFとして保存・印刷できます。</p>
+            
+            <div class="grid-2">
+              <div class="flow-step-card active">
+                <div class="flow-step-badge">STEP 1</div>
+                <div class="flow-step-title">URLパラメータ付与</div>
+                <p class="flow-step-desc">ブラウザのアドレスバーで、URLの末尾に <code>?print-pdf</code> を追加してEnterキーを押します。</p>
+              </div>
+              <div class="flow-step-card active">
+                <div class="flow-step-badge">STEP 2</div>
+                <div class="flow-step-title">印刷ダイアログの起動</div>
+                <p class="flow-step-desc"><kbd>Ctrl</kbd> + <kbd>P</kbd>（Macは <kbd>Cmd</kbd> + <kbd>P</kbd>）を押して印刷画面を開きます。</p>
+              </div>
+            </div>
+            <div style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 10px; font-size: 0.9rem; color: #94a3b8;">
+              💡 <strong>印刷設定のヒント:</strong> 送信先で「PDFに保存」を選択し、「背景のグラフィック」にチェックを入れてください。「1枚あたりのページ数」もお好みで調整可能です。
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 1: AGENDA / TABLE OF CONTENTS
+           ========================================== -->
+      <section>
+        <div class="glass-card">
+          <span class="badge badge-teal">Agenda</span>
+          <h2>本日の説明内容（目次）</h2>
+          
+          <div class="grid-2" style="margin-top: 1.5rem; gap: 1.2rem;">
+            <div class="agenda-card">
+              <div class="agenda-num">01</div>
+              <div class="agenda-title">図書館とは・図書館員とは</div>
+              <p class="agenda-desc">図書館員の本当の役割、資格取得後の就職状況・進路、Q&amp;A</p>
+            </div>
+            
+            <div class="agenda-card">
+              <div class="agenda-num">02</div>
+              <div class="agenda-title">図書館情報学課程で学ぶには</div>
+              <p class="agenda-desc">開講形態（土曜・16条）、ステップアップ履修、司書／司書教諭コースと受講料</p>
+            </div>
+            
+            <div class="agenda-card">
+              <div class="agenda-num">03</div>
+              <div class="agenda-title">履修決定までのながれ</div>
+              <p class="agenda-desc">受講希望Googleフォーム入力（12月〜1月）、4月の履修登録と受講料納入</p>
+            </div>
+            
+            <div class="agenda-card">
+              <div class="agenda-num">04</div>
+              <div class="agenda-title">時間割・開講科目</div>
+              <p class="agenda-desc">土曜1〜4講のスケジュール、各資格に必要な科目数と単位数（25単位/10単位/20単位）</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SECTION 1: 図書館とは・図書館員とは
+           ========================================== -->
+      <section>
+        <!-- 1.0 Section Title -->
+        <section>
+          <div class="glass-card text-center" style="padding: 4rem 2rem;">
+            <span class="badge">Part 1</span>
+            <h2 style="font-size: 2.6rem;"><span class="gradient-text">1. 図書館とは・図書館員とは</span></h2>
+            <p style="font-size: 1.2rem; color: #94a3b8; max-width: 700px; margin: 1.5rem auto 0;">
+              単なる「本の貸出」にとどまらない、情報アクセスを支える専門職としての役割と、卒業生の多様なキャリア。
+            </p>
+          </div>
+        </section>
+
+        <!-- 1.1 図書館の本質 -->
+        <section>
+          <div class="glass-card">
+            <span class="badge badge-teal">Concept</span>
+            <h2>図書館とは・図書館員とは</h2>
+            
+            <div class="qa-box" style="margin-top: 1.5rem; background: rgba(20, 184, 166, 0.05); border-color: rgba(20, 184, 166, 0.25);">
+              <p style="font-size: 1.2rem; line-height: 1.8; color: #f1f5f9; margin: 0;">
+                <span class="fragment">図書館員は<strong>本を運ぶことだけが仕事ではありません。</strong><br>真の専門性は<span class="highlight-keyword">「必要な情報の案内（情報アクセス支援）」</span>にあります。</span>
+              </p>
+            </div>
+
+            <div class="grid-2" style="margin-top: 1.5rem;">
+              <div class="agenda-card fragment">
+                <h4 style="color: #38bdf8; margin-bottom: 0.5rem;">❌ 公共図書館は「無料貸本屋」ではない</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">娯楽本の貸出にとどまらず、市民の「知りたい」「学びたい」という課題解決を支える機関です。</p>
+              </div>
+              <div class="agenda-card fragment">
+                <h4 style="color: #2dd4bf; margin-bottom: 0.5rem;">⭕ 多様な課題解決とアクセス支援の場</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">子育て、ビジネス、郷土史研究、法情報など、確かな情報にアクセスする手伝いをします。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 1.2 Q&A 1: 司書の就職実態 -->
+        <section>
+          <div class="glass-card">
+            <span class="badge badge-rose">Question &amp; Answer</span>
+            <h2>よくある質問 (1)</h2>
+            
+            <div class="qa-box" style="margin-top: 1.2rem;">
+              <div class="qa-question">
+                <span class="qa-q-badge">Q</span>
+                <div>司書希望者のうち、実際どのくらいの人数が現在司書として働いていますか？</div>
+              </div>
+              <div class="qa-answer fragment">
+                <span class="qa-a-badge">A</span>
+                <div>
+                  <p style="margin: 0 0 0.8rem 0;">
+                    司書は公共図書館勤務に必要とされる資格です。全国（本学を含む）で<strong>毎年約1万人</strong>が任用資格を取得します。
+                  </p>
+                  <ul class="icon-list" style="margin: 0;">
+                    <li><strong>新卒での正規採用はかなり狭き門</strong>です。</li>
+                    <li>非常勤職員（会計年度任用職員など）として経験を積み、複数の研修やステップを経て専任職員を目指す人が多くいます。</li>
+                    <li>これは<strong>学芸員（博物館等）やアーキビスト（公文書管理専門職）など、他の文化専門職と同様</strong>のキャリアパスです。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 1.3 Q&A 2: 司書以外の進路 & ITスキル -->
+        <section>
+          <div class="glass-card">
+            <span class="badge badge-sky">Question &amp; Answer</span>
+            <h2>よくある質問 (2)</h2>
+            
+            <div class="qa-box" style="margin-top: 1.2rem;">
+              <div class="qa-question">
+                <span class="qa-q-badge">Q</span>
+                <div>図書館情報学課程を履修した人は、司書以外でどのような仕事に就いていますか？</div>
+              </div>
+              <div class="qa-answer fragment">
+                <span class="qa-a-badge">A</span>
+                <div>
+                  <p style="margin: 0 0 0.8rem 0;">
+                    <strong>公務員、一般企業（会社員）など極めて多彩</strong>です。近年は特に<strong>IT関連企業</strong>への就職者が増えています。
+                  </p>
+                  
+                  <div style="background: rgba(56, 189, 248, 0.08); border-left: 3px solid var(--accent-sky); padding: 0.8rem 1.2rem; border-radius: 0 8px 8px 0; margin-top: 0.8rem;">
+                    <div style="font-weight: 700; color: #38bdf8; margin-bottom: 0.3rem;">💻 必修科目「図書館情報技術論」での実践的な学び</div>
+                    <p style="font-size: 0.9rem; margin: 0; color: #cbd5e1;">
+                      本課程では<strong>SQLやスクリプト言語（PHPなど）</strong>を学び、実際にデータベースを構築します。<br>
+                      卒業生からは<em>「在学中に学んだデータベースの仕組みや情報検索の論理的理解が、一般企業のビジネス現場で非常に役立っている」</em>という声が多く寄せられています。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 1.4 Q&A 3: 本学の取得者数 -->
+        <section>
+          <div class="glass-card">
+            <span class="badge badge-teal">Question &amp; Answer</span>
+            <h2>よくある質問 (3)</h2>
+            
+            <div class="qa-box" style="margin-top: 1.2rem;">
+              <div class="qa-question">
+                <span class="qa-q-badge">Q</span>
+                <div>藤女子大学で資格をとる人は、毎年何人くらいいますか？</div>
+              </div>
+              <div class="qa-answer fragment">
+                <span class="qa-a-badge">A</span>
+                <div>
+                  <p style="margin: 0 0 0.8rem 0;">
+                    本学では2学部全学科を合わせて、毎年<span class="highlight-keyword">40人から80人程度</span>が資格を取得しています。<br>
+                    <span style="font-size: 0.9rem; color: #94a3b8;">（※司書コースと司書教諭コースの合計。学校司書のスキル認定単位取得者も含まれます）</span>
+                  </p>
+                  
+                  <div class="agenda-card" style="margin-top: 1rem; background: rgba(255,255,255,0.02);">
+                    <div style="font-weight: 700; color: #a
